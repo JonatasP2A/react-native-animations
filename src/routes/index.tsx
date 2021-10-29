@@ -2,6 +2,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Examples from '../screens/Examples';
 import MeetTheCrew from '../screens/MeetTheCrew';
+import CreditCard from '../screens/CreditCard';
 
 const App = createNativeStackNavigator();
 
@@ -19,7 +20,7 @@ const Routes: React.FC = () => (
       component={MeetTheCrew}
       options={{ header: () => null }}
     />
-    {/* <App.Screen name="CreditCard" component={CreditCard} /> */}
+    <App.Screen name="CreditCard" component={CreditCard} />
   </App.Navigator>
 );
 
