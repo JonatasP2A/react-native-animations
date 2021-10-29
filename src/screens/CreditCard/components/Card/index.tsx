@@ -79,7 +79,11 @@ export const Card = ({ x, cardNumber, name, valid, ccv }: CardProps) => {
           backStyles,
         ]}
       >
-        <Back colors={['#B1B1B2', '#6B6B6D']}>
+        <Back
+          colors={['#aa4b6b', '#6b6b83', '#3b8d99']}
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+        >
           <Line />
           <WhiteLine>
             <SmallLine />
@@ -102,7 +106,11 @@ export const Card = ({ x, cardNumber, name, valid, ccv }: CardProps) => {
           frontStyles,
         ]}
       >
-        <Front colors={['#B1B1B2', '#6B6B6D']}>
+        <Front
+          colors={['#aa4b6b', '#6b6b83', '#3b8d99']}
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}
+        >
           <Top>
             <CreditCardBrand>{getCardBrandIcon()}</CreditCardBrand>
           </Top>
