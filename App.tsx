@@ -1,22 +1,25 @@
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import Routes from './src/routes';
+import LoadAssets from './src/LoadAssets';
+
+import { assets as meetTheCrewAssets } from './src/screens/MeetTheCrew';
+
+const fonts = {
+  'AirbnbCereal-Black': require('./assets/fonts/AirbnbCerealBlack.ttf'),
+  'AirbnbCereal-Bold': require('./assets/fonts/AirbnbCerealBold.ttf'),
+  'AirbnbCereal-Book': require('./assets/fonts/AirbnbCerealBook.ttf'),
+  'AirbnbCereal-ExtraBold': require('./assets/fonts/AirbnbCerealExtraBold.ttf'),
+  'AirbnbCereal-Light': require('./assets/fonts/AirbnbCerealLight.ttf'),
+  'AirbnbCereal-Medium': require('./assets/fonts/AirbnbCerealMedium.ttf'),
+};
+
+const assets = [...meetTheCrewAssets];
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <LoadAssets assets={assets} fonts={fonts}>
+      <Routes />
+    </LoadAssets>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -1,0 +1,18 @@
+export const Colors = {
+  white: '#FFF',
+  brown100: 'rgb(266, 147, 74)',
+  brown200: 'rgba(266, 147, 74, 0.5)',
+  brown300: 'rgba(266, 147, 74, 0.3)',
+  brown400: '#AE7037',
+  brown500: '#794E27',
+  orange100: 'rgb(255, 165, 59)',
+  orange200: 'rgba(255, 165, 59, 0.5)',
+  orange300: 'rgba(255, 165, 59, 0.3)',
+  orange400: '#FF8831',
+  orange500: '#C05E25',
+  yellow100: 'rgb(255, 215, 111)',
+  yellow200: 'rgba(255, 215, 111, 0.5)',
+  yellow300: 'rgba(255, 215, 111, 0.3)',
+  yellow400: '#FFC01F',
+  yellow500: '#BB8C15',
+};
